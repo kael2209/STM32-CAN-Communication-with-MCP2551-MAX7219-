@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"rxc\startup_stm32f103xb.o"
+"rxc\main.o"
+"rxc\stm32f1xx_it.o"
+"rxc\stm32f1xx_hal_msp.o"
+"rxc\max7219.o"
+"rxc\spi.o"
+"rxc\stm32f1xx_hal_gpio_ex.o"
+"rxc\stm32f1xx_hal_can.o"
+"rxc\stm32f1xx_hal.o"
+"rxc\stm32f1xx_hal_rcc.o"
+"rxc\stm32f1xx_hal_rcc_ex.o"
+"rxc\stm32f1xx_hal_gpio.o"
+"rxc\stm32f1xx_hal_dma.o"
+"rxc\stm32f1xx_hal_cortex.o"
+"rxc\stm32f1xx_hal_pwr.o"
+"rxc\stm32f1xx_hal_flash.o"
+"rxc\stm32f1xx_hal_flash_ex.o"
+"rxc\stm32f1xx_hal_exti.o"
+"rxc\stm32f1xx_hal_tim.o"
+"rxc\stm32f1xx_hal_tim_ex.o"
+"rxc\system_stm32f1xx.o"
+--strict --scatter "rxc\rxc.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "rxc.map" -o rxc\rxc.axf
